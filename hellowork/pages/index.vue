@@ -1,11 +1,21 @@
 <template>
-  <Tutorial />
+  <div>
+    <h1>Welcome to the homepagesfsdfdsaf</h1>
+    <AppAlert>
+      <NuxtLink to="/PocketCalculator">PocketCalculator.vue</NuxtLink>
+    </AppAlert>
+  </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<style>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
 
-export default Vue.extend({
-  name: 'IndexPage'
-})
-</script>
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>
